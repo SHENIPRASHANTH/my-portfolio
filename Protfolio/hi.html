@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashanth's Portfolio</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: #1a1a1a; color: #f5f5f5; line-height: 1.6; }
+
+        /* Header */
+        header { 
+            /* background: linear-gradient(135deg, #00bcd4, #ff4081);  */
+            padding: 20px;
+            text-align: center; 
+            font-size: 2em; 
+            font-weight: bold; 
+            border-bottom: 5px solid #00bcd4; 
+            animation: slideIn 1s ease-in-out;
+        }
+
+        /* Container */
+        .container { max-width: 1400px; margin: auto; padding: 50px 20px; animation: fadeIn 1s ease-in-out; }
+
+        /* Hero Section */
+        /* /* Hero Section */
+#home { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    text-align: left; 
+    padding: 100px 20px; 
+}
+
+/* Text Section */
+.home-text { 
+    max-width: 600px; 
+}
+
+.home-text h1 { 
+    font-size: 2.8em; 
+    color: #00bcd4; 
+}
+
+.home-text p { 
+    font-size: 1.2em; 
+    margin: 20px 0; 
+}
+
+/* Profile Picture */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic { 
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    border: 5px solid #00bcd4; 
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.5); 
+}
+
+.profile-pic:hover { 
+    transform: scale(1.1); 
+    animation: bounce 0.5s ease-in-out;
+}
+
+        /* Buttons */
+        .btn { 
+            background: #ff4081; 
+            color: white; 
+            padding: 12px 25px; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-size: 1.2em; 
+            transition: 0.3s; 
+        }
+        .btn:hover { background: #e91e63; }
+
+        /* Sections */
+        section { 
+    padding: 200px 80px; /* Increased padding */
+    min-height: 80vh; /* Ensures each section takes at least the full viewport height */
+    border-radius: 20px; 
+    margin: 50px 0; 
+    background: #262626; 
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.3); 
+    animation: fadeIn 1s ease-in-out;
+}
+
+        h2 { 
+            font-size: 2em; 
+            text-align: center; 
+            margin-bottom: 20px; 
+            color: #00bcd4; 
+        }
+
+        /* Grid Sections */
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 50px; 
+            padding: 30px 0; 
+        }
+        .card { 
+            background: linear-gradient(135deg, #333, #444); 
+            padding: 30px; 
+            border-radius: 10px; 
+            transition: 0.4s ease-in-out; 
+            border-left: 5px solid #00bcd4; 
+            text-align: center; 
+            font-size: 1.2em; 
+            font-weight: bold; 
+        }
+        .card:hover { 
+            transform: translateY(-8px) scale(1.05); 
+            box-shadow: 0 8px 20px rgba(0, 188, 212, 0.5); 
+        }
+
+        /* Footer */
+        footer { 
+            background: #1f1f1f; 
+            text-align: center; 
+            padding: 20px; 
+            margin-top: 30px; 
+            font-size: 1em; 
+            border-top: 5px solid #00bcd4; 
+        }
+        #projects a {
+            color: white;
+        }
+        .cursor {
+        font-weight: bold;
+        font-size: 2.8em;
+        color: #00bcd4;
+        animation: blink 0.7s infinite;
+    }
+
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        Prashanth's Portfolio
+    </header>
+    
+    <section id="home" class="container">
+        <div class="home-text">
+            <h1><span id="typing-text"></span><span class="cursor">|</span></h1>
+            <p>BTech Student | Web Developer | AIML Enthusiast</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div>
+            <img src="Hii.jpg" alt="Prashanth's Profile Picture" class="profile-pic">
+        </div>
+    </section>
+    
+    
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>I am Prashanth, a BTech student at Vasavi College, passionate about Web Development, AIML, and Open-Source Contributions.</p>
+        <p>I have a strong foundation in Java, SQL, and JavaScript, and I enjoy solving complex problems through Data Structures and Algorithms. I actively contribute to open-source projects and have experience building full-stack applications.</p>
+        <p>Besides coding, I have a keen interest in mentoring and knowledge sharing. I am currently involved in a mentor-mentee matching project and love helping others learn and grow.</p>
+        <p>My academic journey also includes a diploma in Computer Science from SGM, where I honed my technical skills further. In my free time, I enjoy singing and exploring new advancements in technology.</p>
+    </section>
+    
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card">C</div>
+            <div class="card">Java</div>
+            <div class="card">SQL</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Neo4j</div>
+            <div class="card">Web Development</div>
+            <div class="card">DSA</div>
+            <div class="card">OS</div>
+            <div class="card">AIML</div>
+        </div>
+    </section>
+    
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+            <a href="https://life-link.vercel.app" class="card" target="_blank">Life-Link</a>
+            <a href="https://mentormentee-liart.vercel.app/" class="card" target="_blank">Vasavi-Mentor Mentee Matching System</a>
+            <a href="https://rainfall-prediction.vercel.app" class="card" target="_blank">Rainfall Prediction using ML</a>
+            <a href="https://quiz-project.vercel.app" class="card" target="_blank">Quiz Project using Java</a>
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p >Email: <p style="color:#00bcd4; text-decoration:none; font-weight:bold;" >prashanthsheni@gmail.com</p> </p>
+        <p>LinkedIn: <br><a href="https://www.linkedin.com/in/prashanth-sheni-06273a281/" style="color:#00bcd4; text-decoration:none; font-weight:bold;">www.linkedin.com/in/prashanth-sheni</a></p>
+        <p>GitHub: <br><a href="https://github.com/SHENIPRASHANTH" style="color:#00bcd4; text-decoration:none; font-weight:bold;">github.com/SHENIPRASHANTH</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Prashanth. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const phrases = [
+        "Hi Iam Prashanth Sheni..."
+    ]; // Add multiple texts
+
+    let textIndex = 0;
+    let charIndex = 0;
+    let typingSpeed = 100;
+    let deletingSpeed = 50;
+    let delayBetweenPhrases = 1500;
+    let isDeleting = false;
+
+    function typeEffect() {
+        let currentText = phrases[textIndex];
+        let displayText = currentText.substring(0, charIndex);
+        document.getElementById("typing-text").textContent = displayText;
+
+        if (!isDeleting && charIndex < currentText.length) {
+            charIndex++;
+            setTimeout(typeEffect, typingSpeed);
+        } else if (isDeleting && charIndex > 0) {
+            charIndex--;
+            setTimeout(typeEffect, deletingSpeed);
+        } else {
+            isDeleting = !isDeleting;
+            if (!isDeleting) {
+                textIndex = (textIndex + 1) % phrases.length; // Loop through phrases
+            }
+            setTimeout(typeEffect, delayBetweenPhrases);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+</body>
+</html>
